@@ -1,36 +1,30 @@
 # intro-ex
 
-FIXME: description
+Solutions to the exercises in MACHINE LEARNING INTRODUCTION: STRING
+CLASSIFICATION (Course at Aarhus University, Spring 2014)
 
-## Installation
+## See also
 
-Download from http://example.com/FIXME.
+http://cs.au.dk/~cstorm/courses/MLiB_f14/index.html
 
-## Usage
+## License (MIT)
 
-FIXME: explanation
+Copyright © 2014 Richard Möhn <richard PUNKTUM moehn SNABEL-A posteo PUNKTUM de>
 
-    $ java -jar intro-ex-0.1.0-standalone.jar [args]
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-## Options
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
 
-FIXME: listing of options this app accepts.
-
-## Examples
-
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
-
-## License
-
-Copyright © 2014 FIXME
-
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.

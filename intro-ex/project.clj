@@ -1,6 +1,7 @@
 (defproject intro-ex "0.1.0-SNAPSHOT"
-  :description "Solutions to the exercises in MACHINE LEARNING
-               INTRODUCTION: STRING CLASSIFICATION"
+  :description "Solutions to the exercises in MACHINE LEARNING INTRODUCTION:
+               STRING CLASSIFICATION (Course at Aarhus University, Spring
+               2014)"
   :license {:name "MIT License"
             :url "http://opensource.org/licenses/MIT"}
   :dependencies [
