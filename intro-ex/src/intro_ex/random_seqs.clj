@@ -1,5 +1,8 @@
 (ns intro-ex.random-seqs)
+
 ; TODO: Create a proper abstraction for intervals.
+
+; Why did I write all that stuff on my own? What a waste of time!
 
 (defn- rand-float-seq [length]
   "Returns a seq of length length of random floating point numbers."
@@ -30,8 +33,8 @@
      intervals
      (let [cur-key    (first rem-keys)
            cur-upper  (+ last-upper (distribution cur-key))]
-       (recur 
-         (rest rem-keys) 
+       (recur
+         (rest rem-keys)
          (assoc intervals cur-key [last-upper cur-upper])
          cur-upper)))))
 
@@ -46,19 +49,19 @@
   "bounds are distinct numbers between 0 and 1. Returns a coll of the
   lengths of the intervals specified by the bounds."
   {:pre  [(apply distinct? bounds)
-          (every? #(< 0 % 1) bounds)]}  
+          (every? #(< 0 % 1) bounds)]}
 ;   :post [(= 1 (apply + %))]}  % doesn't work for some reason.
   (let [subtrahends (cons 0 (sort bounds))
         minuends    (lazy-cat (rest subtrahends) [1])]
     (map - minuends subtrahends)))
 
 (defn gen-random-distribution [ks]
-  "Returns a random probability distribution for the keys ks. 
-  
+  "Returns a random probability distribution for the keys ks.
+
   It is not clear what a random probability distribution should look
   like.  Currently this function finds some random numbers between 0 and
   1 and uses the differences between them as probabilities.
- 
+
   Note also, that this function will assign a non-zero probability to
   every key in ks. Therefore it is not guaranteed, only very likely,
   that it will terminate."
@@ -75,7 +78,7 @@
   they should occur."
   {:pre [(pos? length)
          (prob-sum-1? distribution)]}
-  (let [interval-for (distr-to-intervals distribution) 
+  (let [interval-for (distr-to-intervals distribution)
         random-nums  (rand-float-seq length)]
     (map (partial num-to-key interval-for) random-nums)))
 
@@ -93,5 +96,5 @@
          (prob-sum-1? prob-for2)
          (= (keys prob-for1) (keys prob-for2))]}
   (apply + (map (fn [k] (* (Math/log (/ (prob-for1 k) (prob-for2 k)) )
-                           (prob-for2 k))) 
+                           (prob-for2 k)))
                 (keys prob-for1))))
